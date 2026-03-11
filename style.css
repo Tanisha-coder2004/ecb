@@ -29,9 +29,9 @@
     align-self: stretch;
     gap:0.5rem
 }
-/* .logo{
-    border: 5px solid rgb(80, 214, 13);
-} */
+.logo{
+    border-left: 5px solid rgb(13, 157, 214);
+}
 .logo img{
     width: 100%;
 }
@@ -320,22 +320,25 @@ a:hover{
 .time-duration{
     background-color: red;
     color: white;
-    width: 3.5rem;
+    width: 3.6rem;
     height: 1.2rem;
     font-size: 0.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 8px 6px;
+    gap:0.2rem
 }
 .time-duration img{
-    width: 11px;
-    height: 11px;
+    width: 13px;
+    height: 13px;
 }
 
 .date{
-    color:#7fa2bc;
+    color:#419bc8;
     font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0.1rem;
 }
 
 .navbar-mobile{
@@ -349,9 +352,12 @@ a:hover{
 }
 
 @media (max-width:900px){
-    .active{
+    /* .active{
         display: block;
-    }
+    } */
+     .mobile-sidebar.active{
+        display: block;
+     }
     .sidebar{
         display: none;
     }
@@ -426,14 +432,14 @@ a:hover{
         gap:4px;
         transition: all 0.3s ease ;
     }
-    .hamburger:hover .line2{
+    .hamburger.active .line2{
       opacity: 0;
     }
-     .hamburger:hover .line1{
+     .hamburger.active .line1{
       transform: translateY(8px) rotate(45deg);
 
     }
-     .hamburger:hover .line3{
+     .hamburger.active .line3{
       transform: translateY(-8px) rotate(-45deg);
     }
 
@@ -539,13 +545,13 @@ a:hover{
 
 .background-image{
     background-image: linear-gradient(rgba(1, 20, 40, 0), #011428 80%),url("./images/England-U19s-leave-the-field-in-Australia.png");
-    min-height: 60vh;
+    min-height: 59vh;
     padding: 0.5rem;
     background-size: cover;
     width: 100%;
 }
 .headline{
-    height: 60vh;
+    height: 59vh;
 }
 
 .main-heading{
